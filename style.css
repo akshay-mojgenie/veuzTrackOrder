@@ -1,0 +1,168 @@
+body,
+html {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.logo {
+  width: 120px;
+}
+.navbar {
+  display: flex;
+  padding: 10px 6vw 10px 6vw;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.062745098);
+}
+.banner {
+  background-image: url(http://site.mojgenie.in/ac2ba7f3c7aa2ab23bf5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+  padding-inline: 6vw;
+}
+.banner-title {
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  margin-top: -16px;
+  margin-bottom: 12px;
+  margin-left: -4px;
+}
+.content {
+  padding: 20px 6vw;
+  font-size: 20px;
+  font-weight: 600;
+}
+.submit {
+  display: flex;
+  gap: 6px 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.submit-button {
+  height: 30px;
+  font-size: 14px;
+  background-color: #235d80;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 500;
+  box-shadow: none;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.map {
+  margin-top: 10px;
+  padding-inline: 10vw;
+  height: 15px;
+  height: 500px;
+  display: none;
+}
+.history {
+  margin-top: 10px;
+  padding-inline: 6vw;
+}
+.history-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.history-item {
+  width: 350px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.history-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.history-item-title p {
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+.history-item-id {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.history-details-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+footer {
+  margin-top: 10px;
+  padding-inline: 6vw;
+  padding-block: 10px;
+  text-align: center;
+  background-color: #e3e3e3;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 16px;
+  margin-left: 4px;
+  margin-bottom: 6px;
+}
+.time-sub{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.time p {
+  margin: 0;
+  margin-bottom: 0;
+}
+.time.border-left {
+  border-left: 1px solid #d9d9d9;
+  padding-bottom: 38px;
+}
+.time.border-left.active {
+  border-left: 1px solid #2fb344;
+}
+.map-icon {
+  float: right;
+  margin-top: -30px;
+}
+.warning{
+  color: red;
+  font-size: 12px;
+  font-weight: 300;
+  margin-block: 0;
+}
+.text-normal{
+  font-size: 14px;
+  font-weight: 400;
+  width: 50%;
+  margin-bottom: 40px;
+}
+@media(max-width:435px){
+  .history-item{
+    width: auto;
+  }
+}
+@media(max-width:860px){
+  .text-normal{
+    width: 100%;
+  }
+}

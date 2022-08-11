@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img class="logo" src="./img/logo.png" alt="" />
+    </nav>
+    <div class="banner">
+      <p class="banner-title">Track your truck</p>
+    </div>
+    <div class="content">
+      <p>For tracking your truck you need tracking ID</p>
+      <div class="submit">
+        <p>Tracking ID</p>
+        <input class="input" type="text" />
+        <a class="submit-button">Submit</a>
+      </div>
+      <p class="warning">Warning: This tracking ID doesn't exist.</p>
+    </div>
+    <div id="map" class="map">
+      <div
+        style="
+          max-width: 100%;
+          overflow: hidden;
+          color: red;
+          width: 100%;
+          height: 500px;
+        "
+      >
+        <div id="gmapcanvas" style="height: 100%; width: 100%; max-width: 100%">
+          <iframe
+            style="height: 100%; width: 100%; border: 0"
+            frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=kerala&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+        </div>
+        <a
+          class="googlemap-html"
+          href="https://www.embed-map.com"
+          id="injectmap-data"
+          >https://www.embed-map.com</a
+        ><style>
+          #gmapcanvas img {
+            max-width: none !important;
+            background: none !important;
+            font-size: inherit;
+            font-weight: inherit;
+          }
+        </style>
+      </div>
+    </div>
+    <div class="history">
+      <p class="history-title">Details of your tracking id</p>
+      <div class="history-item">
+        <div class="history-item-title">
+          <p>Lorem ipsum</p>
+          <img
+            style="cursor: pointer"
+            src="./img/map.svg"
+            alt=""
+            onclick="toggleMap()"
+          />
+        </div>
+        <p class="history-item-id">Truck : LA8009</p>
+        <p class="history-item-id">Ref id : 0fa3b422</p>
+        <div class="history-details">
+          <p class="history-details-title">
+            <img style="margin-right: 5px" src="./img/active.svg" alt="" />
+            Warehouse1
+          </p>
+          <div class="time border-left active">
+            <p>lorem psum dolor sit amet, consectetur</p>
+            <div class="time-sub">
+              <img src="./img/time.svg" alt="" />
+              <p>02/03/2022 09:00PM</p>
+            </div>
+          </div>
+          <p class="history-details-title">
+            <img style="margin-right: 5px" src="./img/active.svg" alt="" />
+            Jobsite1
+          </p>
+          <div class="time">
+            <p>lorem psum dolor sit amet, consectetur</p>
+            <div class="time-sub">
+              <img src="./img/time.svg" alt="" />
+              <p>02/03/2022 09:00PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>All rights reserved © Veuz Concepts</p>
+    </footer>
+    <script>
+      function toggleMap() {
+        const map = document.getElementById("map");
+        if (map.style.display == "revert") {
+          map.style.display = "none";
+        } else {
+          map.style.display = "revert";
+        }
+      }
+    </script>
+  </body>
+</html>
